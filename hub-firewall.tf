@@ -1,3 +1,11 @@
+resource "azurerm_public_ip" "firewall" {
+  name                = "pip-fw-hub"
+  location            = azurerm_resource_group.hub.location
+  resource_group_name = azurerm_resource_group.hub.name
+  allocation_method   = "Static"
+  sku                 = "Standard"
+}
+
 resource "azurerm_public_ip" "firewall_management" {
   name                = "pip-fw-mgmt-hub"   # <- e.g. "pip-fw-mgmt-hub"
   location            = azurerm_resource_group.hub.location
