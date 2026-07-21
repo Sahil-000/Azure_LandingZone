@@ -17,6 +17,13 @@ resource "azurerm_subnet" "firewall" {
   address_prefixes     = ["10.0.1.0/26"]
 }
 
+resource "azurerm_subnet" "firewall_management" {
+  name                 = "AzureFirewallManagementSubnet"   # exact name required
+  resource_group_name  = azurerm_resource_group.hub.name
+  virtual_network_name = azurerm_virtual_network.hub.name
+  address_prefixes     = ["10.0.3.0/26"]  
+}
+
 resource "azurerm_subnet" "bastion" {
   name                 = "AzureBastionSubnet"   # exact name required, don't change
   resource_group_name  = azurerm_resource_group.hub.name
