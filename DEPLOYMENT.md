@@ -56,7 +56,7 @@ Verified the structural alignment under the Tenant Root Group, segregating **Pla
 ### Hub & Spoke Virtual Networks
 Verified the **Hub VNet** (`10.0.0.0/16`) and **Spoke VNet** (`10.1.0.0/16`) subnet configurations and active bidirectional VNet peering.
 
-![Hub Subnets](images/rg-hub/vnet-hub%20subnets.png)
+![Hub Subnets](images/rg-hub/vnet-hub-subnets.png)
 
 ---
 
