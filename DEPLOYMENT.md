@@ -49,21 +49,28 @@ Visual confirmation of deployed resources from the Azure Portal:
 ### Management Group Hierarchy
 Verified the structural alignment under the Tenant Root Group, segregating **Platform** and **Landing Zones**.
 
-![Management Groups](images/rg-hub/rg-hub.png)
+![Management Groups](images/management-groups.png)
+
+---
+
+### Hub Resource Group Overview
+Verified the creation of the central `rg-hub` resource group hosting the Azure Firewall, Public IP addresses, and Virtual Network resources in Australia East.
+
+![Hub Resource Group](images/rg-hub.png)
 
 ---
 
 ### Hub & Spoke Virtual Networks
 Verified the **Hub VNet** (`10.0.0.0/16`) and **Spoke VNet** (`10.1.0.0/16`) subnet configurations and active bidirectional VNet peering.
 
-![Hub Subnets](images/rg-hub/vnet-hub-subnets.png)
+![Hub Subnets](images/vnet-hub-subnets.png)
 
 ---
 
 ### Centralized Azure Firewall
 Verified that the Azure Firewall (Basic SKU) instance was initialized inside `AzureFirewallSubnet` for centralized security inspection.
 
-![Firewall Overview](images/rg-hub/FW-HUB.png)
+![Firewall Overview](images/FW-HUB.png)
 
 ---
 
