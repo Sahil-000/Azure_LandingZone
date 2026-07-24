@@ -11,7 +11,7 @@ resource "azurerm_virtual_network" "spoke" {
 }
 
 resource "azurerm_subnet" "workload" {
-  name                 = "10.1.0.0/24"   # <- e.g. "subnet-workload"
+  name                 = "snet-workload"   # <- e.g. "subnet-workload"
   resource_group_name  = azurerm_resource_group.spoke.name
   virtual_network_name = azurerm_virtual_network.spoke.name
   address_prefixes     = ["10.1.0.0/24"]   # workload subnet, carved from 10.1.0.0/16
