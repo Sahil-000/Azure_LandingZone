@@ -61,7 +61,7 @@ Verified the creation of the central `rg-hub` resource group hosting the Azure F
 ---
 
 ### Hub & Spoke Virtual Networks
-Verified the **Hub VNet** (`10.0.0.0/16`) and **Spoke VNet** (`10.1.0.0/16`) subnet configurations and active bidirectional VNet peering.
+Verified the **Hub VNet** (`10.0.0.0/16`) subnet configurations (`AzureFirewallSubnet`, `AzureBastionSubnet`) supporting centralized security and connectivity.
 
 ![Hub Subnets](images/vnet-hub-subnets.png)
 
