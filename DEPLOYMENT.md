@@ -81,6 +81,13 @@ Verified that the Azure Firewall (Basic SKU) instance was initialized inside `Az
 
 ---
 
+### Virtual Network Peering & Connectivity
+Verified the active bidirectional VNet peering connection between **`vnet-spoke`** and **`vnet-hub`**, displaying **`Connected`** and **`Fully Synchronized`** statuses to ensure seamless cross-VNet traffic routing.
+
+![VNet Peering](images/vnet-peering.png)
+
+---
+
 ## 4. Resource Teardown
 
 To manage cloud usage efficiently, all billable components were safely destroyed after testing and documentation:
