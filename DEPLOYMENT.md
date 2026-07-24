@@ -70,7 +70,7 @@ Verified the **Hub VNet** (`10.0.0.0/16`) subnet configurations (`AzureFirewallS
 ### Spoke Virtual Network Subnets
 Verified the subnet configuration inside **`vnet-spoke`**, confirming the creation of the dedicated workload subnet (**`snet-workload`** - `10.1.0.0/24`) for application deployment.
 
-![Spoke Subnets](images/rg-hub/vnet-spoke-subnets.png)
+![Spoke Subnets](images/vnet-spoke-subnets.png)
 
 ---
 
