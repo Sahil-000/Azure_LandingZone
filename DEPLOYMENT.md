@@ -27,7 +27,15 @@ terraform init
 ```
 ![Terraform Init](images/Terraform-init.png)
 
-### Step 2: Execution Plan
+### Step 2: Configuration Validation
+Verify the internal consistency and syntax of all .tf configuration files.
+
+```bash
+terraform validate
+```
+![Terraform Validate](images/Terraform-Validate.png)
+
+### Step 3: Execution Plan
 Generated and inspected the execution plan to confirm resource specs:
 
 ```bash
@@ -35,7 +43,7 @@ terraform plan -out=tfplan
 ```
 ![Terraform Plan](images/Terraform-plan.png)
 
-### Step 3: Infrastructure Provisioning
+### Step 4: Infrastructure Provisioning
 Applied the targeted configuration to create the Landing Zone hierarchy, virtual networks, subnets, and Azure Firewall:
 
 ```bash
