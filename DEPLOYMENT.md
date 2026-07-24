@@ -25,6 +25,7 @@ Initialized the backend and downloaded the required AzureRM provider plugins:
 cd terraform/
 terraform init
 ```
+![Terraform Init](images/Terraform-init.png)
 
 ### Step 2: Execution Plan
 Generated and inspected the execution plan to confirm resource specs:
@@ -32,6 +33,7 @@ Generated and inspected the execution plan to confirm resource specs:
 ```bash
 terraform plan -out=tfplan
 ```
+![Terraform Plan](images/Terraform-plan.png)
 
 ### Step 3: Infrastructure Provisioning
 Applied the targeted configuration to create the Landing Zone hierarchy, virtual networks, subnets, and Azure Firewall:
@@ -39,7 +41,7 @@ Applied the targeted configuration to create the Landing Zone hierarchy, virtual
 ```bash
 terraform apply tfplan
 ```
-
+![Terraform Apply](images/Terraform-apply.png)
 ---
 
 ## 3. Deployment Proof & Verification
@@ -97,3 +99,5 @@ terraform destroy
 ```
 
 *Note: `terraform destroy` cleanly tore down the firewall, peered networks, subnets, and management group associations.*
+
+![Terraform Destroy](images/Terraform-destroy.png)
