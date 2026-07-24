@@ -33,7 +33,7 @@ Verify the internal consistency and syntax of all .tf configuration files.
 ```bash
 terraform validate
 ```
-![Terraform Validate](images/Terraform-Validate.png)
+![Terraform Validate](images/Terraform-validate.png)
 
 ### Step 3: Execution Plan
 Generated and inspected the execution plan to confirm resource specs:
